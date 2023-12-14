@@ -1,0 +1,6 @@
+## Interface: 11500
+## Title: Profession Level Up Chime
+## Author: Bobby Wisdom
+## Version: 0.0.1
+
+main.lua
