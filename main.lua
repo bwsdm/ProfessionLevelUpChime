@@ -1,7 +1,7 @@
 local frame = CreateFrame("Frame")
 
 local function playTrack()
-	PlaySoundFile("Interface\\Addons\\ProfessionLevelUpChime\\Sounds\\sogne.mp3")
+	PlaySoundFile("Interface\\Addons\\ProfessionLevelUpChime\\Sounds\\coin.mp3")
 end
 
 frame:RegisterEvent("CHAT_MSG_SKILL")
