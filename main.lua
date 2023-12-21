@@ -6,6 +6,7 @@ end
 
 frame:RegisterEvent("CHAT_MSG_SKILL")
 frame:SetScript("OnEvent", function(self, event, ...)
+	local args = { ... }
 	local professionList = {
 		"Mining",
 		"Skinning",
@@ -20,8 +21,8 @@ frame:SetScript("OnEvent", function(self, event, ...)
 		"First Aid",
 		"Alchemy",
 	}
-	for k in ipairs(professionList) do
-		if string.find(arg1, professionList[k]) then
+	for k in pairs(professionList) do
+		if string.find(args[1], professionList[k]) then
 			playTrack()
 		end
 	end
