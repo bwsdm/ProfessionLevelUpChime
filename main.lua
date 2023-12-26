@@ -18,9 +18,7 @@ end
 frame:SetScript("OnEvent", function(self, event, ...)
 	local args = { ... }
 
-	print(args[1])
 	local skillName, currentSkill = string.match(args[1], "(.+) increases to (%d+)")
-	-- print("Skill: " .. skillName .. "CurrentLevel: " .. currentSkill)
 	if skillName and currentSkill then
 		local formattedMessage = skillName .. "has reached" .. currentSkill .. "!"
 		popupFrame.text:SetText(formattedMessage)
