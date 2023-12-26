@@ -3,7 +3,7 @@ frame:RegisterEvent("CHAT_MSG_SKILL")
 
 local popupFrame = CreateFrame("Frame")
 popupFrame:SetSize(300, 100)
-popupFrame:SetPoint("TOPCENTER")
+popupFrame:SetPoint("TOPRIGHT")
 popupFrame:Hide()
 
 popupFrame.text = popupFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
