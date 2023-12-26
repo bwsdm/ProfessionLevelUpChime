@@ -19,6 +19,7 @@ frame:SetScript("OnEvent", function(self, event, ...)
 	local args = { ... }
 
 	local skillName, currentSkill, maxSkill = string.match(args[1], "(.+) increases to (%d+)/(%d+)")
+	print("Skill: " .. skillName .. "CurrentLevel: " .. currentSkill .. "MaxLevel: " .. maxSkill)
 	if skillName and currentSkill and maxSkill then
 		local formattedMessage = skillName .. "has reached" .. currentSkill .. "!"
 		popupFrame.text:SetText(formattedMessage)
