@@ -39,7 +39,7 @@ frame:SetScript("OnEvent", function(self, event, ...)
 			local skillName, currentSkill = string.match(args[1], "(.+) has increased to (%d+)")
 			print(skillName .. currentSkill)
 			if skillName and currentSkill then
-				local formattedMessage = skillName .. "has reached" .. currentSkill .. "!"
+				local formattedMessage = skillName .. " has reached " .. currentSkill .. "!"
 				popupFrame.text:SetText(formattedMessage)
 				popupFrame:Show()
 				playTrack()
