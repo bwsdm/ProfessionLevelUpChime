@@ -34,10 +34,8 @@ frame:SetScript("OnEvent", function(self, event, ...)
 	}
 	for _, profession in ipairs(professionList) do
 		local matchedProfessionResult, _ = string.find(args[1], profession)
-		print(matchedProfessionResult)
 		if matchedProfessionResult then
 			local skillName, currentSkill = string.match(args[1], "(.+) has increased to (%d+)")
-			print(skillName .. currentSkill)
 			if skillName and currentSkill then
 				local formattedMessage = skillName .. " has reached " .. currentSkill .. "!"
 				popupFrame.text:SetText(formattedMessage)
@@ -49,7 +47,6 @@ frame:SetScript("OnEvent", function(self, event, ...)
 end)
 
 popupFrame:SetScript("OnShow", function(self)
-	print("Do we make it here?")
 	self:SetAlpha(1)
 	self.fadeOut = self:CreateAnimationGroup()
 	local fadeOut = self.fadeOut:CreateAnimation("Alpha")
