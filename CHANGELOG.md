@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v0.1.1
+
+- Removed testing print statements
+- Changed popup duration to 2.5 seconds, down from 3
+
 ## v0.1.0
 
 - Added v1 of profession level up popup announcement
