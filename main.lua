@@ -9,8 +9,6 @@ popupFrame:Hide()
 popupFrame.text = popupFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 popupFrame.text:SetAllPoints(true)
 
-local matchedProfession
-
 local function playTrack()
 	PlaySoundFile("Interface\\Addons\\ProfessionLevelUpChime\\Sounds\\coin.mp3")
 end
@@ -52,7 +50,7 @@ popupFrame:SetScript("OnShow", function(self)
 	local fadeOut = self.fadeOut:CreateAnimation("Alpha")
 	fadeOut:SetFromAlpha(1)
 	fadeOut:SetToAlpha(0)
-	fadeOut:SetDuration(3)
+	fadeOut:SetDuration(2.5)
 	fadeOut:SetScript("OnFinished", function()
 		self:Hide()
 	end)
